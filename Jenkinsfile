@@ -12,6 +12,7 @@ bat "mvn clean install"
 stage('test')
 {
 bat "mvn test"
+ junit allowEmptyResults: true, keepLongStdio: true, testDataPublishers: [[$class: 'JUnitFlakyTestDataPublisher']], testResults: ''
 }
  
 
