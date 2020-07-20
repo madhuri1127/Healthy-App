@@ -19,7 +19,7 @@ sh "mvn test"
  stage('deploy')
  {
  
- sudo sh sam.sh
+  sh "sam.sh"
   
  }
  
