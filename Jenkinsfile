@@ -7,17 +7,17 @@ git "https://github.com/madhuri1127/trial"
 }
  stage('package')
 {
-bat "mvn clean install"
+sh "mvn clean install"
 }
 
 stage('test')
 {
-bat "mvn test"
+sh "mvn test"
  
 }
  stage('deploy')
  {
-  bat 'ssh root@krish-poc-node3 sh("""/root/sam.sh""")'
+  sh 'ssh root@krish-poc-node3 sh("""/root/sam.sh""")'
   
  }
  
