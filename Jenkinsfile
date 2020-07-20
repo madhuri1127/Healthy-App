@@ -15,6 +15,12 @@ stage('test')
 bat "mvn test"
  
 }
+ stage('deploy')
+ {
+  bat 'ssh root@krish-poc-node3 sh("""/root/sam.sh""")'
+  
+ }
+ 
  
 
 
