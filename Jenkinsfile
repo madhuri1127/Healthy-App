@@ -17,7 +17,8 @@ sh "mvn test"
 }
  stage('deploy')
  {
-  sh 'ssh root@krish-poc-node3 sh("""/root/sam.sh""")'
+ sudo cd /root
+ sudo ./sam.sh
   
  }
  
