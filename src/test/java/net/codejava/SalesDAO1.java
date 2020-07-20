@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SalesManager.class)
-class SalesDAOTest {
+public class SalesDAO1{
 
 	private SalesDAO dao;
 	@BeforeEach
