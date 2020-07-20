@@ -8,10 +8,12 @@ git "https://github.com/madhuri1127/trial"
 {
 bat "mvn clean install"
 }
+
+stage('test')
+{
+bat "mvn test"
+}
  
-
-
-
 
 
 
