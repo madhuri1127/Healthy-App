@@ -15,12 +15,6 @@ stage('test')
 sh "mvn test"
  
 }
- stage('deploy')
- {
- sudo cd /root
- sudo ./sam.sh
-  
- }
  
  
 
