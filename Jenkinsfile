@@ -6,7 +6,7 @@ git "https://github.com/madhuri1127/trial"
 }
  stage('package')
 {
-mvn clean install
+bat "mvn clean install"
 }
  
 
