@@ -26,9 +26,7 @@ sh "mvn test"
  
  stage('deploy')
  {
- c="$(cat /root/sam.sh)"
-echo c
-  
+ sh pwd
  }
  
 
