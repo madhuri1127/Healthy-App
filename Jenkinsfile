@@ -27,7 +27,8 @@ sh "mvn test"
  stage('deploy')
  {
 	
-	./root/sam.sh
+	sh 'chmod +x ./sam.sh'
+sh './sam.sh'
  }
  
 
