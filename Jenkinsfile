@@ -26,12 +26,13 @@ sh "mvn test"
  
  stage('deploy')
  {
- 
-
- sh './sam.sh'
- 
-	     }
- 
+  sh './sam.sh'
+ }
+	
+  stage('deploy1')
+ {
+  echo 'done'
+ }
 
 
 
