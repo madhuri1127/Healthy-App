@@ -1,48 +1,39 @@
-pipeline {
-	agent any 
-	stages{
-
+node
+{
 stage('read')
 {
- steps{
-  
 git "https://github.com/madhuri1127/trial"
-
- }
+ 
 }
  stage('package')
 {
- when {
-    
-    expression { return false }
-}
- steps{
-
+if(true)
+	{
  sh "mvn clean install"
- }
 
+	}
+	else
+	{
+		echo 'helloo'
+	}
 }
 
 stage('test')
 {
- steps
- {
 sh "mvn test"
- } 
+ 
 }
  
  stage('deploy')
  {
-  steps
-  {
+ 
   "sh /root/sam.sh "
-  }
   
  }
-}
+ 
+
+
+
+
 
 }
-
-
-
-
