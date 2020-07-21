@@ -23,10 +23,7 @@ stage('Test Code Coverage')
 sh "mvn test"
  
 }
-   stage('ZAP Vulnerability Scan')
- {
-  sh './sam.sh'
- }
+ 
 
 	
   stage('Security Scan Report')
