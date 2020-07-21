@@ -16,6 +16,7 @@ public class Sale {
 	}
 
 	public int getId() {
+		//g
 		return id;
 	}
 
