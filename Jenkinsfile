@@ -26,6 +26,7 @@ sh "mvn test"
  
  stage('deploy')
  {
+	 sh "cd /root"
  sh "pwd"
  }
  
