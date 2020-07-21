@@ -40,7 +40,7 @@ sh "mvn test"
 	
  stage('TEst vulnerability')
  {
-  if(false)
+  if(true)
 	 {
 		 echo 'success'
 	 }
