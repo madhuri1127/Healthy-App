@@ -43,7 +43,9 @@ sh "mvn test"
 	
  stage('Deployment Decision')
  {
-  if(false)
+	value= sh 'cat a.sh'
+	 
+  if(value)
 	 {
 		 echo 'Success'
 	 }
