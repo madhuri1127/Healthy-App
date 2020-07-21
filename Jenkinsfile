@@ -1,11 +1,11 @@
 node
 {
-stage('Checkout')
+stage('Read SCM from GIT')
 {
 git "https://github.com/madhuri1127/trial"
  
 }
- stage('Compile')
+ stage('Compile Package')
 {
 if(true)
 	{
@@ -18,18 +18,18 @@ if(true)
 	}
 }
 
-stage('Test')
+stage('Test Code Coverage')
 {
 sh "mvn test"
  
 }
-   stage('deploy')
+   stage('ZAP Vulnerability Scan')
  {
   sh './sam.sh'
  }
 
 	
-  stage('Html report generation')
+  stage('Security Scan Report')
  {
   publishHTML (target: [
       allowMissing: false,
@@ -37,18 +37,19 @@ sh "mvn test"
       keepAll: true,
 	   reportDir: './',
       reportFiles: 'localtest.html',
-      reportName: "RCov Report"
+      reportName: "Security Scan Report"
     ])
  }
 	
- stage('Test vulnerability')
+ stage('Deployment Decision')
  {
   if(false)
 	 {
-		 echo 'success'
+		 echo 'Success'
 	 }
 	 else
 	 {
+		 echo 'Review Required'
 		 sh "exit 1"
 	 }
  }
