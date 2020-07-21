@@ -27,8 +27,7 @@ sh "mvn test"
  stage('deploy')
  {
  
-sh cd  /root
- sh ./sam.sh
+echo 'cat sam.sh'
   
  }
  
