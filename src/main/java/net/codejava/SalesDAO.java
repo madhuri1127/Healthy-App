@@ -24,6 +24,7 @@ public class SalesDAO {
 
 	public List<Sale> list() {
 		String sql = "SELECT * FROM SALES";
+		//h
 
 		List<Sale> listSale = jdbcTemplate.query(sql, 
 				BeanPropertyRowMapper.newInstance(Sale.class));
