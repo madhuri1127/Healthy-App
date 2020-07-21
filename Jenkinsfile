@@ -7,7 +7,7 @@ git "https://github.com/madhuri1127/trial"
 }
  stage('package')
 {
-if(false)
+if(true)
 	{
  sh "mvn clean install"
 
