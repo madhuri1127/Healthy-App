@@ -23,10 +23,7 @@ stage('Test')
 sh "mvn test"
  
 }
-  stage('deploy')
- {
-  sh './sam.sh'
- }
+  
 
 	
   stage('deploy1')
@@ -43,7 +40,7 @@ sh "mvn test"
 	
  stage('TEst vulnerability')
  {
-  if(true)
+  if(false)
 	 {
 		 echo 'success'
 	 }
