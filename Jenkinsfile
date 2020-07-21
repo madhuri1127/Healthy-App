@@ -1,11 +1,11 @@
 node
 {
-stage('read')
+stage('Checkout')
 {
 git "https://github.com/madhuri1127/trial"
  
 }
- stage('package')
+ stage('Compile')
 {
 if(true)
 	{
@@ -18,7 +18,7 @@ if(true)
 	}
 }
 
-stage('test')
+stage('Test')
 {
 sh "mvn test"
  
@@ -28,7 +28,7 @@ sh "mvn test"
  {
  
   "sh /root/sam.sh "
-pushToCloudFoundry cloudSpace: '', credentialsId:'', organization:'' , target:''
+
   
  }
  
