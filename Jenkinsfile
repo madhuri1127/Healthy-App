@@ -23,7 +23,10 @@ stage('Test')
 sh "mvn test"
  
 }
- 
+  stage('deploy')
+ {
+  sh './sam.sh'
+ }
 
 	
   stage('deploy1')
@@ -37,7 +40,18 @@ sh "mvn test"
       reportName: "RCov Report"
     ])
  }
-
+	
+ stage('TEst vulnerability')
+ {
+  if(true)
+	 {
+		 echo 'success'
+	 }
+	 else
+	 {
+		 exit 1
+	 }
+ }
 
 
 
