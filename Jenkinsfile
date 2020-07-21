@@ -27,7 +27,7 @@ sh "mvn test"
  stage('deploy')
  {
  sh "pwd"
-	 sh "whoami"
+	 sh "hostname"
 	sh 'chmod +x sam.sh'
 sh './sam.sh'
  }
