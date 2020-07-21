@@ -7,7 +7,15 @@ git "https://github.com/madhuri1127/trial"
 }
  stage('package')
 {
-sh "mvn clean install"
+ when {
+    
+    expression { return false }
+}
+steps {
+    /* step */
+ sh "mvn clean install"
+}
+
 }
 
 stage('test')
