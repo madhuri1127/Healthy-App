@@ -27,7 +27,7 @@ sh "mvn test"
  stage('deploy')
  {
  
-sh './sam.sh'
+sudo './sam.sh'
  }
  
 
