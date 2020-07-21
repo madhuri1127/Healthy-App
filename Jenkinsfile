@@ -1,5 +1,6 @@
 pipeline {
 	agent any 
+	stages{
 
 stage('read')
 {
@@ -41,7 +42,7 @@ sh "mvn test"
  }
 }
 
-
+}
 
 
 
