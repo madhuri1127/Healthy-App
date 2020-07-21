@@ -35,7 +35,6 @@ sh "mvn test"
       allowMissing: false,
       alwaysLinkToLastBuild: false,
       keepAll: true,
-      reportDir: 'coverage',
       reportFiles: 'localtest.html',
       reportName: "RCov Report"
     ])
