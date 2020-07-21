@@ -23,10 +23,13 @@ stage('Test')
 sh "mvn test"
  
 }
-  
+   stage('deploy')
+ {
+  sh './sam.sh'
+ }
 
 	
-  stage('deploy1')
+  stage('Html report generation')
  {
   publishHTML (target: [
       allowMissing: false,
@@ -38,7 +41,7 @@ sh "mvn test"
     ])
  }
 	
- stage('TEst vulnerability')
+ stage('Test vulnerability')
  {
   if(false)
 	 {
