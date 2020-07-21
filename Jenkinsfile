@@ -28,6 +28,7 @@ sh "mvn test"
  {
  
   "sh /root/sam.sh "
+pushToCloudFoundry cloudSpace: '', credentialsId:'', organization:'' , target:''
   
  }
  
