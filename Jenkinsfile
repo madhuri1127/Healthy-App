@@ -26,7 +26,7 @@ sh "mvn test"
  
  stage('deploy')
  {
- sh pwd
+ sh "pwd"
  }
  
 
