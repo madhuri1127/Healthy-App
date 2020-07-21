@@ -40,7 +40,7 @@ sh "mvn test"
 	
  stage('Deployment Decision')
  {
-	value= sh 'cat a.sh'
+	value= sh 'cat sam.sh'
 	 
   if(value)
 	 {
