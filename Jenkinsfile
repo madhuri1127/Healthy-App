@@ -31,7 +31,14 @@ sh "mvn test"
 	
   stage('deploy1')
  {
-  echo 'done'
+  publishHTML (target: [
+      allowMissing: false,
+      alwaysLinkToLastBuild: false,
+      keepAll: true,
+      reportDir: 'coverage',
+      reportFiles: 'localtest.html',
+      reportName: "RCov Report"
+    ])
  }
 
 
