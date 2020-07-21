@@ -24,10 +24,7 @@ sh "mvn test"
  
 }
  
- stage('deploy')
- {
-  sh './sam.sh'
- }
+
 	
   stage('deploy1')
  {
