@@ -46,7 +46,7 @@ sh "mvn test"
 	 }
 	 else
 	 {
-		 currentBuild.result = 'FAILURE'
+		 sh "exit 1"
 	 }
  }
 
