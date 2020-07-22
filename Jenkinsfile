@@ -24,7 +24,10 @@ sh "mvn test"
  
 }
  
-
+stage('ZAP Security Scan')
+ {
+  sh './a.sh'
+ }
 	
 	
   stage('Security Scan Report')
@@ -48,7 +51,7 @@ sh "mvn test"
 	
 echo value
 	 
-  if(value =="Success")
+  if(value =="SUCCESS")
 	 {
 		 echo 'Success'
 	 }
