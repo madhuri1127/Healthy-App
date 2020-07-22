@@ -24,7 +24,11 @@ sh "mvn test"
  
 }
  
-
+stage('ZAP Security Scan')
+ {
+  sh './sam.sh'
+ }
+	
 	
   stage('Security Scan Report')
  {
