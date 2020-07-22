@@ -44,7 +44,7 @@ stage('ZAP Security Scan')
 	
  stage('Deployment Decision')
  {
-	value = sh 'cat foo.txt'
+	
 	 
   if(value=="Success")
 	 {
