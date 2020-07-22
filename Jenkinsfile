@@ -42,7 +42,7 @@ sh "mvn test"
  stage('Deployment Decision')
  {
 	 
-sh 'cat foo.txt >value'
+value=sh 'cat foo.txt'
 	
 echo value
 	 
