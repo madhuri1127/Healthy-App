@@ -26,6 +26,7 @@ sh "mvn test"
  
 stage('ZAP Security Scan')
  {
+	 cd /root
   sh './a.sh'
  }
 	
@@ -45,7 +46,7 @@ stage('ZAP Security Scan')
  stage('Deployment Decision')
  {
 	 
-
+cd /root
 	 value = readFile('foo.txt').trim()
   
 	
