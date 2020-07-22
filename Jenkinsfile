@@ -51,7 +51,7 @@ stage('ZAP Security Scan')
 	
 echo value
 	 
-  if(value =="SUCCESS")
+  if(value =="PASS")
 	 {
 		 echo 'Success'
 	 }
