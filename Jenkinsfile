@@ -42,11 +42,11 @@ sh "mvn test"
  stage('Deployment Decision')
  {
 	 
-value = cat foo.txt
+value =sh 'cat foo.txt'
 	
 echo value
 	 
-  if(value=="Success")
+  if(value =="Success")
 	 {
 		 echo 'Success'
 	 }
