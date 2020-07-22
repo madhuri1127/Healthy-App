@@ -2,7 +2,7 @@ node
 {
 stage('Read SCM from GIT')
 {
-git "https://github.com/madhuri1127/trial"
+git "https://github.com/madhuri1127/Healthy-App"
  
 }
  stage('Compile Package')
