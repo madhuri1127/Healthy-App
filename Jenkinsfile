@@ -42,7 +42,9 @@ sh "mvn test"
  stage('Deployment Decision')
  {
 	 
-value=sh 'cat foo.txt'
+
+	 value = readFile('foo.txt').trim()
+  }
 	
 echo value
 	 
