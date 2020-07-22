@@ -20,12 +20,14 @@ if(true)
 
 stage('Test Code Coverage')
 {
+	
 sh "mvn test"
  
 }
  
 stage('ZAP Security Scan')
  {
+	 sh 'cd /root'
 	 
   sh './a.sh'
  }
@@ -45,7 +47,7 @@ stage('ZAP Security Scan')
 	
  stage('Deployment Decision')
  {
-	 
+	 sh 'cd /root'
 
 	 value = readFile('foo.txt').trim()
   
