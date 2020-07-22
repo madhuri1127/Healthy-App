@@ -44,7 +44,7 @@ sh "mvn test"
 	 
 
 	 value = readFile('foo.txt').trim()
-  }
+  
 	
 echo value
 	 
