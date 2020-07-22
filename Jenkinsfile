@@ -44,7 +44,7 @@ stage('ZAP Security Scan')
 	
  stage('Deployment Decision')
  {
-	value= sh 'cat sam.sh'
+	value= sh 'cat a.sh'
 	 
   if(value)
 	 {
