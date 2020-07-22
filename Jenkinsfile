@@ -24,10 +24,7 @@ sh "mvn test"
  
 }
  
-stage('ZAP Security Scan')
- {
-  sh './a.sh'
- }
+
 	
 	
   stage('Security Scan Report')
@@ -47,6 +44,7 @@ stage('ZAP Security Scan')
 	 
 value = cat foo.txt
 	
+echo value
 	 
   if(value=="Success")
 	 {
