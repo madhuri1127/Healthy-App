@@ -30,7 +30,7 @@ stage('ZAP Security Scan')
 	
 	
 	 
-  sh './a.sh'
+  sh './sam.sh'
  }
 	
 	
@@ -48,7 +48,7 @@ stage('ZAP Security Scan')
 	
  stage('Deployment Decision')
  {
-	
+	 sh './a.sh'
 
 	 value = readFile('foo.txt').trim()
   
