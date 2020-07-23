@@ -24,7 +24,7 @@ stage('Test Code Coverage')
 
 	
 	
-	publishCoverage adapters: [jacocoAdapter('target/jacoco.xml')]
+	publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
 	
  
 }
