@@ -29,7 +29,7 @@ stage('Test Code Coverage')
       allowMissing: false,
       alwaysLinkToLastBuild: false,
       keepAll: true,
-	   reportDir: 'jacoco',
+	   reportDir: 'target/site/jacoco',
       reportFiles: 'index.html',
       reportName: "Code Coverage Report"
     ])
