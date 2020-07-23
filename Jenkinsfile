@@ -22,6 +22,8 @@ stage('Test Code Coverage')
 {
 	
 sh "mvn test"
+	
+	junit 'target/jacoco.xml'
 	publishCoverage adapters: [jacocoAdapter('target/jacoco.xml')]
  
 }
