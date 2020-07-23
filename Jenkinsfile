@@ -21,7 +21,7 @@ if(true)
 stage('Test Code Coverage')
 {
 	
-sh "mvn test"
+
 	
 	
 	publishCoverage adapters: [jacocoAdapter('target/jacoco.xml')]
