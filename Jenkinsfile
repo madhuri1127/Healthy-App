@@ -25,6 +25,14 @@ stage('Test Code Coverage')
 	
 	
 	publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
+	 publishHTML (target: [
+      allowMissing: false,
+      alwaysLinkToLastBuild: false,
+      keepAll: true,
+	   reportDir: './',
+      reportFiles: 'index.html',
+      reportName: "Code Coverage Report"
+    ])
 	
  
 }
