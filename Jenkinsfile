@@ -25,6 +25,14 @@ sh "mvn test"
 	
 	
 	publishCoverage adapters: [jacocoAdapter('target/jacoco.xml')]
+	 publishHTML (target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: './',
+                    reportFiles: 'index.html',
+                    reportName: "Junit coverage Report"
+            ])
  
 }
  
